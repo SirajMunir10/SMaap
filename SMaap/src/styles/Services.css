@@ -1,0 +1,104 @@
+/* Overall Services Section */
+.services-section {
+  background-color: #f0f4f8; /* Soft blue-gray background */
+  padding: 80px 20px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+/* Header Styling */
+.services-header {
+  margin-bottom: 40px;
+}
+
+.services-title {
+  font-size: 32px;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.services-description {
+  font-size: 16px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Centering Adjustment */
+.services-grid-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 30px;
+  justify-items: center; /* Center-aligns the grid items */
+}
+
+/* Centering the last row */
+.services-grid > .service-card:nth-last-child(-n + 2) {
+  grid-column: span 2;
+  justify-self: center;
+}
+
+/* Service Card */
+.service-card {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  width: 250px; /* Ensures a consistent card width */
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  background-color: #ff8800; /* Adds a soft orange hover effect */
+  color: #ffffff;
+}
+
+/* Service Icon */
+.service-icon {
+  font-size: 40px;
+  color: #ffcc33; /* Slightly muted yellow color */
+  margin-bottom: 20px;
+}
+
+.service-card:hover .service-icon {
+  color: #ffffff;
+}
+
+/* Service Name */
+.service-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0;
+  transition: color 0.3s;
+}
+
+.service-card:hover .service-name {
+  color: #ffffff;
+}
+
+/* Service Description */
+.service-info {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.5;
+  transition: color 0.3s;
+}
+
+.service-card:hover .service-info {
+  color: #ffffff;
+}

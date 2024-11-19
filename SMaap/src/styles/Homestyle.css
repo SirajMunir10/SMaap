@@ -1,0 +1,68 @@
+/* Home.css */
+
+/* Style for the homepage component */
+.homepage {
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.header {
+  background: url("../assets/SMreal.jpg") center/cover no-repeat;
+  height: 90vh;
+  position: relative;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-content .subtitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.header-content .main-title {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition for color and opacity */
+}
+
+.btn:hover {
+  color: white; /* Change text color on hover */
+  opacity: 0.8; /* Slightly transparent on hover */
+}
+
+.primary-btn {
+  background-color: #00c8ff;
+  color: #fff;
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-arrow {
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: #fff;
+}
