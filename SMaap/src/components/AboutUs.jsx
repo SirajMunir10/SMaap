@@ -6,6 +6,7 @@ import aboutImage2 from "../assets/about2.jpg";
 import aboutImage3 from "../assets/about3.jpg";
 import aboutImage4 from "../assets/about4.jpg";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const AboutUs = () => {
   return (
@@ -55,6 +56,7 @@ const AboutUs = () => {
           <img src={aboutImage4} alt="Spa area" />
         </div>
       </div>
+      <Footer />
     </>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { services } from "../data/alldata";
 import "../styles/Services.css";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Services() {
   return (
@@ -23,12 +24,13 @@ export default function Services() {
               <div className="service-card" key={index}>
                 <div className="service-icon">{item.icon}</div>
                 <h3 className="service-name">{item.name}</h3>
-                <p className="service-info">{item.description}</p>
+                <p className="service-info">{item.discription}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

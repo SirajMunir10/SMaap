@@ -64,7 +64,15 @@ function Rooms() {
             Check Now
           </button>
         </div>
-
+        <div className="type-rooms">
+          {selectedType === "Standard" ? (
+            <h2>Standard Rooms</h2>
+          ) : selectedType === "Luxury" ? (
+            <h2>Luxury Rooms</h2>
+          ) : (
+            <h2>All Rooms</h2>
+          )}
+        </div>
         <div className="rooms">
           {filteredRooms.length > 0 ? (
             filteredRooms.map((room, index) => (
