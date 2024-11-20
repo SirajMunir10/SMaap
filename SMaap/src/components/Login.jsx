@@ -13,37 +13,25 @@ import {
 function Login() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  // Get errors from Redux
   const validationErrors = useSelector(
     (state) => state.userSlice.validationErrors
   );
 
-  const [values, setValues] = useState({
-    email: "",
-    password: "",
-  });
+  const [values, setValues] = useState({ email: "", password: "" });
   const [errors, setErrors] = useState({});
 
   const handleInput = (e) => {
-    setValues((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
+    setValues((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  // Update local errors state whenever validationErrors in Redux state changes
   useEffect(() => {
     setErrors(validationErrors);
   }, [validationErrors]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Dispatch validation action to update Redux state
     dispatch(validateLogin(values));
 
-    // Check for errors after validation is dispatched
     if (!errors.email && !errors.password) {
       axios
         .post("http://localhost:8081/login", values)
@@ -60,10 +48,10 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-image"></div>
-      <div className="login-form">
-        <h2>Log In to Your Account</h2>
+    <div className="auth-container">
+      <div className="auth-image"></div>
+      <div className="auth-form">
+        <h2>Log In</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="email">Email Address</label>
@@ -74,7 +62,7 @@ function Login() {
               placeholder="Enter your email"
               required
               onChange={handleInput}
-              autoComplete="email" // Add autocomplete attribute here
+              autoComplete="email"
             />
             {errors.email && (
               <span className="text-danger">{errors.email}</span>
@@ -89,13 +77,13 @@ function Login() {
               placeholder="Password"
               required
               onChange={handleInput}
-              autoComplete="current-password" // Add autocomplete attribute here
+              autoComplete="current-password"
             />
             {errors.password && (
               <span className="text-danger">{errors.password}</span>
             )}
           </div>
-          <button type="submit" className="login-button">
+          <button type="submit" className="auth-button">
             Login
           </button>
           <p>
@@ -105,6 +93,13 @@ function Login() {
             Create Account
           </Link>
         </form>
+        <p className="terms-text">
+          By signing in or creating an account, you agree with our{" "}
+          <a href="#">Terms & Conditions</a> and{" "}
+          <a href="#">Privacy Statement</a>.
+          <br />
+          All rights reserved. Copyright (2006 - 2024) - SMhotels.com™
+        </p>
       </div>
     </div>
   );

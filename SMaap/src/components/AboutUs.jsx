@@ -27,16 +27,15 @@ const AboutUs = () => {
             priority, and every moment is crafted to create lasting memories.
           </p>
           <div className="stats">
-            <Link to="/rooms">
-              <div className="stat-item">
-                <i className="fas fa-hotel"></i>
-                <p>7861</p>
-                <span>Rooms</span>
-              </div>
-            </Link>
+            <div className="stat-item">
+              <i className="fas fa-hotel"></i>
+              <p>15</p>
+              <span>Rooms</span>
+            </div>
+
             <div className="stat-item">
               <i className="fas fa-users"></i>
-              <p>1234</p>
+              <p>123</p>
               <span>Staff</span>
             </div>
             <div className="stat-item">

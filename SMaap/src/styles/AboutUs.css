@@ -11,9 +11,7 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   padding: 60px 40px;
-  background-color: #ffffff; /* White background for contrast */
-  border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+
   max-width: 1200px;
   margin: 40px auto;
 }
@@ -25,7 +23,7 @@ body {
 }
 
 .about-text h5 {
-  color: #ffb400; /* Highlight color */
+  color: #a05e2c; /* Highlight color */
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 12px;
@@ -39,7 +37,7 @@ body {
 }
 
 .about-text h2 span {
-  color: #ffb400;
+  color: #a05e2c;
 }
 
 .about-text p {
@@ -71,7 +69,7 @@ body {
 
 .stat-item i {
   font-size: 32px;
-  color: #ffb400;
+  color: #a05e2c;
   margin-bottom: 10px;
 }
 
@@ -89,7 +87,7 @@ body {
 
 /* Explore More Button */
 .toExploremore {
-  background-color: #ffb400;
+  background-color: #a05e2c;
   color: #fff;
   padding: 12px 24px;
   border: none;
@@ -100,7 +98,7 @@ body {
 }
 
 .toExploremore:hover {
-  background-color: #e0a000;
+  background-color: #a05e2c;
 }
 
 /* Image Grid */

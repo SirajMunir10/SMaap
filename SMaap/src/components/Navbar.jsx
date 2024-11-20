@@ -14,10 +14,10 @@ function Navbar() {
           <Link to="/AboutUs">About Us</Link>
         </li>
         <li>
-          <Link to="Services">Services</Link>
+          <Link to="/Services">Services</Link>
         </li>
         <li>
-          <Link to="rooms">Rooms</Link>
+          <Link to="/Rooms">Rooms</Link>
         </li>
         <li>
           <Link to="#page">Page</Link>
@@ -45,7 +45,7 @@ function Navbar() {
       </div>
       <div className="auth-buttons">
         <Link to="/Login">
-          <button className="btn auth-btn">Login</button>
+          <button className="btn1 auth-btn">Login</button>
         </Link>
       </div>
     </nav>

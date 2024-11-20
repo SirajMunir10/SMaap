@@ -1,7 +1,8 @@
 /* Overall Services Section */
 .services-section {
   background-color: #f0f4f8; /* Soft blue-gray background */
-  padding: 80px 20px;
+  padding: 96px;
+  padding-top: 57px;
   font-family: "Arial", sans-serif;
   text-align: center;
   color: #333;
@@ -9,14 +10,15 @@
 
 /* Header Styling */
 .services-header {
-  margin-bottom: 40px;
+  padding-bottom: 32px;
 }
 
 .services-title {
-  font-size: 32px;
-  color: #333;
-  font-weight: 700;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 32px;
+  font-size: 2rem;
 }
 
 .services-description {
