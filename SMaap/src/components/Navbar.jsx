@@ -30,19 +30,22 @@ function Navbar() {
         </li>
       </ul>
       <div className="social-icons">
-        <a href="#" aria-label="Facebook">
+        <a href="https://www.facebook.com/" aria-label="Facebook">
           <i className="fab fa-facebook"></i>
         </a>
-        <a href="#" aria-label="Twitter">
+        <a href="https://twitter.com/?lang=ar" aria-label="Twitter">
           <i className="fab fa-twitter"></i>
         </a>
-        <a href="#" aria-label="Instagram">
+        <a
+          href="https://www.instagram.com/siraj_munir10?igsh=MW4waW11NGl6aW9rYg=="
+          aria-label="Instagram"
+        >
           <i className="fab fa-instagram"></i>
         </a>
-        <a href="#" aria-label="LinkedIn">
+        <a href="https://pk.linkedin.com/" aria-label="LinkedIn">
           <i className="fab fa-linkedin"></i>
         </a>
-        <a href="#" aria-label="YouTube">
+        <a href="https://www.youtube.com/@s1rajmunir10" aria-label="YouTube">
           <i className="fab fa-youtube"></i>
         </a>
       </div>
