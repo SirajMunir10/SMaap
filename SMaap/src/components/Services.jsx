@@ -11,12 +11,6 @@ export default function Services() {
       <div className="services-section">
         <div className="services-header">
           <h2 className="services-title">OUR AWESOME SERVICES</h2>
-          <p className="services-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit.
-          </p>
         </div>
         <div className="services-grid-wrapper">
           <div className="services-grid">
@@ -29,6 +23,9 @@ export default function Services() {
             ))}
           </div>
         </div>
+        <p className="services-description">
+          To avail all these Services book now into our hotel.
+        </p>
       </div>
       <Footer />
     </>
