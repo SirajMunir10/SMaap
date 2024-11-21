@@ -26,10 +26,10 @@ const Footer = () => {
             sirajmunirfurc@gmail.com
           </p>
           <div className="footer-socials">
-            <a href="#" className="social-icon">
+            <a href="https://www.facebook.com/" className="social-icon">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="#" className="social-icon">
+            <a href="https://twitter.com/?lang=ar" className="social-icon">
               <i className="fab fa-twitter"></i>
             </a>
             <a
@@ -38,7 +38,7 @@ const Footer = () => {
             >
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="#" className="social-icon">
+            <a href="https://pk.linkedin.com/" className="social-icon">
               <i className="fab fa-linkedin-in"></i>
             </a>
           </div>
