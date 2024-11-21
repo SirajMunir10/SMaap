@@ -16,6 +16,7 @@ function Login() {
   const validationErrors = useSelector(
     (state) => state.userSlice.validationErrors
   );
+  const login = useSelector((state) => state.userSlice.login);
 
   const [values, setValues] = useState({ email: "", password: "" });
   const [errors, setErrors] = useState({});
@@ -37,8 +38,9 @@ function Login() {
         .post("http://localhost:8081/login", values)
         .then((res) => {
           if (res.data === "Success") {
-            showToast("Login Successful");
             navigate("/");
+            showToast("Login Successful");
+            dispatch(setLogin(true));
           } else {
             alert("No record existed");
           }

@@ -12,7 +12,8 @@ const initialState = {
     totalprice: "",
   },
   loginUsers: [],
-  validationErrors: {}, // Add this to store validation errors
+  validationErrors: {},
+  login: false, // Add this to store validation errors
 };
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -69,8 +70,11 @@ const userSlice = createSlice({
 
       state.validationErrors = error;
     },
+    setLogin(state, action) {
+      state.login = action.payload; // Update login state
+    },
   },
 });
 
-export const { validateLogin, validateSignup } = userSlice.actions;
+export const { setLogin, validateLogin, validateSignup } = userSlice.actions;
 export default userSlice.reducer;

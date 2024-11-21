@@ -4,6 +4,10 @@ import { useSelector, useDispatch } from "react-redux";
 import { validateSignup } from "../features/usercredintials/userSlice";
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import {
+  showErrorToast,
+  showToast,
+} from "../components/NotificationToast/index";
 const SignUp = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -48,6 +52,7 @@ const SignUp = () => {
         .post("http://localhost:8081/signup", values)
         .then((res) => {
           console.log("Signup Success, navigating to Login page...");
+          showToast("SignUp Successfull Now login");
           navigate("/Login");
         })
         .catch((err) => console.log("Signup Error:", err))

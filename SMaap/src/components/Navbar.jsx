@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 function Navbar() {
+  const login = useSelector((state) => state.userSlice.login);
+
   return (
     <nav className="navbar">
       <div className="logo">SM Hotels</div>
@@ -44,9 +47,15 @@ function Navbar() {
         </a>
       </div>
       <div className="auth-buttons">
-        <Link to="/Login">
-          <button className="btn1 auth-btn">Login</button>
-        </Link>
+        {!login ? (
+          <Link to="/Login">
+            <button className="btn1 auth-btn">Login</button>
+          </Link>
+        ) : (
+          <Link to="/AllBookings">
+            <button className="btn1 auth-btn">Profile</button>
+          </Link>
+        )}
       </div>
     </nav>
   );
