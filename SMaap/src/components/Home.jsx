@@ -24,22 +24,6 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="carousel-controls">
-            <span
-              className="carousel-arrow left-arrow"
-              role="button"
-              tabIndex={0}
-            >
-              &lt;
-            </span>
-            <span
-              className="carousel-arrow right-arrow"
-              role="button"
-              tabIndex={0}
-            >
-              &gt;
-            </span>
-          </div>
         </header>
       </div>
       <Footer />
