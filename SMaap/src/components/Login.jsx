@@ -97,8 +97,8 @@ function Login() {
         </form>
         <p className="terms-text">
           By signing in or creating an account, you agree with our{" "}
-          <a href="#">Terms & Conditions</a> and{" "}
-          <a href="#">Privacy Statement</a>.
+          <Link to="/Terms&Co">Terms & Conditions</Link> and{" "}
+          <Link href="#">Privacy Statement</Link>.
           <br />
           All rights reserved. Copyright (2006 - 2024) - SMhotels.com™
         </p>

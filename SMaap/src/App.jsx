@@ -6,6 +6,7 @@ import SignUp from "./components/SignUp";
 import Services from "./components/Services";
 import Login from "./components/Login";
 import Rooms from "./components/Rooms";
+import TermsCo from "./components/Terms&Co";
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Services" element={<Services />} />
+        <Route path="/Terms&Co" element={<TermsCo />} />
       </Routes>
       {/* Added ToastContainer here */}
       <ToastContainer />
