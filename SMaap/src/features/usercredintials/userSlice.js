@@ -1,4 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
+
+// Initial state
 const initialState = {
   user: {
     userId: "",
@@ -16,13 +18,17 @@ const initialState = {
   login: false, // Add this to store validation errors
 };
 
+// Regex Patterns
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{8,}$/;
+const passwordPattern = /^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{8,}$/; // Allow lowercase or uppercase, numeric, and at least 8 characters
+const usernamePattern = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{3,}$/; // Must contain alphabets and numbers
+const namePattern = /^[a-zA-Z\s]+$/; // Must contain alphabets only
 
 const userSlice = createSlice({
   name: "userSlice",
   initialState,
   reducers: {
+    // Validate Login
     validateLogin: (state, action) => {
       let error = {};
 
@@ -36,18 +42,25 @@ const userSlice = createSlice({
 
       if (action.payload.password === "") {
         error.password = "Password should not be empty";
+      } else if (!passwordPattern.test(action.payload.password)) {
+        error.password =
+          "Password must include uppercase, lowercase, and numeric characters.";
       } else {
         error.password = "";
       }
 
       state.validationErrors = error; // Store errors in Redux state
     },
+
+    // Validate Signup
     validateSignup: (state, action) => {
       let error = {};
 
       // Validate name
       if (action.payload.name === "") {
         error.name = "Name should not be empty";
+      } else if (!namePattern.test(action.payload.name)) {
+        error.name = "Name should only contain alphabets";
       } else {
         error.name = "";
       }
@@ -64,12 +77,26 @@ const userSlice = createSlice({
       // Validate password
       if (action.payload.password === "") {
         error.password = "Password should not be empty";
+      } else if (!passwordPattern.test(action.payload.password)) {
+        error.password =
+          "Password must include uppercase, lowercase, and numeric characters.";
       } else {
         error.password = "";
       }
 
-      state.validationErrors = error;
+      // Validate username (optional: if it's part of the payload)
+      if (action.payload.userName === "") {
+        error.userName = "Username should not be empty";
+      } else if (!usernamePattern.test(action.payload.userName)) {
+        error.userName = "Username must contain both alphabets and numbers";
+      } else {
+        error.userName = "";
+      }
+
+      state.validationErrors = error; // Store errors in Redux state
     },
+
+    // Set Login state
     setLogin(state, action) {
       state.login = action.payload; // Update login state
     },

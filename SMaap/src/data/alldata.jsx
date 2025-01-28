@@ -49,10 +49,10 @@ export const services = [
 ];
 export const roomsdata = [
   {
+    roomid: 1,
     name: "Paradise Room",
     image: [Standard1],
     space: 2,
-
     price: 1500,
     type: "Standard",
     maxcount: 1,
@@ -61,6 +61,7 @@ export const roomsdata = [
     description: "",
   },
   {
+    roomid: 2,
     name: "International Standard Room",
     image: [Standard2],
     space: 3,
@@ -72,6 +73,7 @@ export const roomsdata = [
     description: "",
   },
   {
+    roomid: 3,
     name: "Luxury Room",
     image: [Standard3],
     space: 2,
@@ -84,6 +86,7 @@ export const roomsdata = [
       "Luxury Room Inn is centrally located with easy access to key destinations.",
   },
   {
+    roomid: 4,
     name: "Green Leaf",
     image: [Luxury1],
     space: 1,
@@ -96,6 +99,7 @@ export const roomsdata = [
       "Green Leaf offers a peaceful stay with lush green surroundings.",
   },
   {
+    roomid: 5,
     name: "Hotel Stay Inn",
     image: [Luxury2],
     space: 1,
@@ -108,6 +112,7 @@ export const roomsdata = [
       "Stay Inn provides affordable comfort for travelers visiting Secunderabad.",
   },
   {
+    roomid: 6,
     name: "Comfort Rooms",
     image: [Luxury3],
     space: 2,
@@ -120,6 +125,7 @@ export const roomsdata = [
       "Comfort Rooms is a premium suite offering luxurious stay facilities.",
   },
   {
+    roomid: 7,
     name: "Regal Residency",
     image: [Standard4],
     space: 2,
@@ -132,6 +138,7 @@ export const roomsdata = [
       "Regal Residency offers stylish executive room with all modern amenities.",
   },
   {
+    roomid: 8,
     name: "Serene Palace",
     image: [Luxury4],
     space: 4,
@@ -144,6 +151,7 @@ export const roomsdata = [
       "Serene Palace provides budget-friendly options with quality services.",
   },
   {
+    roomid: 9,
     name: "Meera Mansion",
     image: [Luxury5],
     space: 8,
@@ -156,6 +164,7 @@ export const roomsdata = [
       "Meera Mansion is an upscale townhouse offering premium suites for business and leisure.",
   },
   {
+    roomid: 10,
     name: "Grand Elegance",
     image: [Standard5],
     space: 1,
@@ -168,6 +177,7 @@ export const roomsdata = [
       "Grand Elegance ensures a stylish and comfortable stay for its guests.",
   },
   {
+    roomid: 11,
     name: "Oceanic Suite",
     image: [Standard6],
     space: 4,
@@ -179,6 +189,7 @@ export const roomsdata = [
     description: "Oceanic Suite features seaside views with modern amenities.",
   },
   {
+    roomid: 12,
     name: "Elegant Escape",
     image: [Standard8],
     space: 2,
@@ -191,6 +202,7 @@ export const roomsdata = [
       "Elegant Escape provides an elegant and serene environment for relaxation.",
   },
   {
+    roomid: 13,
     name: "Majestic Villa",
     image: [Standard9],
     space: 6,
@@ -203,6 +215,7 @@ export const roomsdata = [
       "Majestic Villa offers an exclusive and majestic stay experience.",
   },
   {
+    roomid: 14,
     name: "Tranquil Terrace",
     image: [Standard7],
     space: 4,
@@ -214,6 +227,7 @@ export const roomsdata = [
     description: "Tranquil Terrace provides a comfortable and tranquil stay.",
   },
   {
+    roomid: 15,
     name: "Royal Retreat",
     image: [Standard10],
     space: 2,
